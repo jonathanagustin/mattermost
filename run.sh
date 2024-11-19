@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+minikube start || true
+
 helm repo add mattermost https://helm.mattermost.com || true
 
 helm upgrade \
